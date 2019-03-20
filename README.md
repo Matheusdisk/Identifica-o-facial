@@ -1,4 +1,4 @@
-# Identifica-o-facial
+# Identificar faces e olhos
 import numpy as np 
 import cv2
 
@@ -7,7 +7,6 @@ import cv2
       eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
       cap = cv2.VideoCapture(0)
-
 while 1:
       ret, matheus = cap.read()
       gray = cv2.cvtColor(matheus, cv2.COLOR_BGR2GRAY)
